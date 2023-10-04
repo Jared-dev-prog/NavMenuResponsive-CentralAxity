@@ -24,7 +24,7 @@
       "description": {
         "default": "NavMenuResponsive-CentralAxity description"
       },
-      "officeFabricIconFontName": "Page",
+      "officeFabricIconFontName": "ResponsesMenu",
       "properties": {
         "description": "NavMenuResponsive-CentralAxity"
       }

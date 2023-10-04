@@ -5,4 +5,20 @@ export interface INavMenuResponsiveCentralAxityProps {
     hasTeamsContext: boolean;
     userDisplayName: string;
 }
+export interface ItemMenu extends ItemMenuView {
+    ID: number;
+    Orden: number;
+    CategoriaPadreId: number;
+    children: ItemMenu[];
+    AbrirPagNueva: boolean;
+}
+export interface ItemMenuView {
+    Title: string;
+    Link: string;
+    childrenList: ItemMenu[];
+    abrirPagNueva: boolean;
+}
+export interface ItemsMenuProps {
+    itemsMenu: ItemMenu[];
+}
 //# sourceMappingURL=INavMenuResponsiveCentralAxityProps.d.ts.map
