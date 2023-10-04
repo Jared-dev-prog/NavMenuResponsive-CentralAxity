@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "nav-menu-responsive-central-axity-client-side-solution",
+    "id": "3c006891-a604-4a8f-a2bf-a833d5aec827",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "NavMenuResponsive-CentralAxity description"
+      },
+      "longDescription": {
+        "default": "NavMenuResponsive-CentralAxity description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "nav-menu-responsive-central-axity Feature",
+        "description": "The feature that activates elements of the nav-menu-responsive-central-axity solution.",
+        "id": "8bf72784-1054-4fa2-b3d2-9bd83a4a8e4e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/nav-menu-responsive-central-axity.sppkg"
+  }
+}
