@@ -14,6 +14,7 @@ declare const styles: {
     contentIndexMenu: string;
     navResponsive: string;
     containerNav: string;
+    consultoria: string;
     itemIcon: string;
     submenu: string;
 };

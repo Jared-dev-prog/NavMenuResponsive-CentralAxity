@@ -3,11 +3,26 @@ import { ItemsMenuProps } from "./INavMenuResponsiveCentralAxityProps";
 import ItemByMenu from "./ItemByMenu";
 import styles from "./NavMenuResponsiveCentralAxity.module.scss";
 
+const handleRedirect = (url: string, typeOpen: boolean): void => {
+  const type = typeOpen ? "_blank" : "_self";
+  window.open(url, type);
+};
+
 const ItemsMenu: React.FC<ItemsMenuProps> = (props) => {
   const { itemsMenu } = props;
   return (
     <nav className={styles.containerNav}>
       <ul>
+        <div
+          className={styles.consultoria}
+          onClick={() =>
+            handleRedirect(
+              "https://intellego365.sharepoint.com/sites/CentralAxity/M%C3%A9xico/Consultoria2",
+              false
+            )
+          }>
+          Consultoría
+        </div>
         {itemsMenu !== undefined
           ? itemsMenu.map((item, index) => (
               <ItemByMenu

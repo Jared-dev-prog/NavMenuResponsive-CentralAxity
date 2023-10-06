@@ -30,7 +30,11 @@ const ItemByMenu: React.FC<ItemMenuView> = (props) => {
         <p onClick={() => handleRedirect(Link, abrirPagNueva)}>{Title}</p>
         {childrenList.length !== 0 ? (
           <div onClick={() => handleSubMenu()}>
-            <FontIcon aria-label="Compass" iconName="CaretSolidDown" className={iconCLose} />
+            <FontIcon
+              aria-label="Compass"
+              iconName={subMenu ? "FlickDown" : "CaretSolidDown"}
+              className={iconCLose}
+            />
           </div>
         ) : (
           ""

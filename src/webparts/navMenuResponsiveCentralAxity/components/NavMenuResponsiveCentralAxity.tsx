@@ -25,10 +25,10 @@ const NavMenuResponsiveCentralAxity: React.FC<INavMenuResponsiveCentralAxityProp
   });
 
   const iconCLose = mergeStyles({
-    fontSize: 12,
-    height: 12,
-    width: 12,
-    padding: "20px",
+    fontSize: 22,
+    height: 22,
+    width: 22,
+    padding: "15px 35px 25px 0px",
     color: "white",
   });
 
@@ -108,7 +108,7 @@ const NavMenuResponsiveCentralAxity: React.FC<INavMenuResponsiveCentralAxityProp
         <div className={styles.contentIndexMenu}>
           <div className={styles.navResponsive}>
             <div className={styles.iconClose} onClick={() => handleCloseMenu()}>
-              <FontIcon aria-label="Compass" iconName="ChromeClose" className={iconCLose} />
+              <FontIcon aria-label="Compass" iconName="ErrorBadge12" className={iconCLose} />
             </div>
 
             <ItemsMenu itemsMenu={listMenuOrder} />

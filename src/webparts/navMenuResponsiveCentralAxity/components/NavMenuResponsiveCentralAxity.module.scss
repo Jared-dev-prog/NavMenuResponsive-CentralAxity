@@ -243,18 +243,24 @@
 }
 .navResponsive {
   position: absolute;
-  width: 55vw;
+  width: 70vw;
   height: auto;
   background-color: #3c1053;
   color: #fff;
 }
 
 .containerNav {
-  padding: 0px 20px;
+  padding: 10px 20px;
 
   ul {
     padding: 0;
     margin: 0;
+
+    .consultoria {
+      font-weight: bold;
+      border-bottom: 1px solid;
+      font-size: 18px;
+    }
 
     li {
       list-style: none;
@@ -264,14 +270,26 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin: 10px 0px;
+
+      p {
+        margin: 0;
+      }
     }
 
     .submenu {
       padding-left: 20px;
-
+      background-color: #f1f1f1;
+      color: #3c1053;
       li {
-        padding: 10px 0;
+        padding: 6px 0;
       }
     }
+  }
+}
+
+@media (min-width: 568px) {
+  .navResponsive {
+    width: 55vw;
   }
 }
