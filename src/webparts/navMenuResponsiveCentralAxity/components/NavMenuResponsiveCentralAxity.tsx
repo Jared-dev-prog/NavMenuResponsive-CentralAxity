@@ -12,6 +12,8 @@ import { FontIcon } from "@fluentui/react/lib/Icon";
 import ItemsMenu from "./ItemsMenu";
 
 const NavMenuResponsiveCentralAxity: React.FC<INavMenuResponsiveCentralAxityProps> = (props) => {
+  const { urlAbsolute } = props;
+
   const [listItems, setListItems] = React.useState<ItemMenu[]>([]);
   const [width, setWidth] = React.useState(window.innerWidth);
   const [viewMenuResponse, setViewMenuResponse] = React.useState(0);
@@ -50,7 +52,7 @@ const NavMenuResponsiveCentralAxity: React.FC<INavMenuResponsiveCentralAxityProp
   React.useEffect(() => {
     sp.setup({
       sp: {
-        baseUrl: "https://intellego365.sharepoint.com/sites/CentralAxity/México/Consultoria2",
+        baseUrl: urlAbsolute,
       },
     });
 
@@ -111,7 +113,7 @@ const NavMenuResponsiveCentralAxity: React.FC<INavMenuResponsiveCentralAxityProp
               <FontIcon aria-label="Compass" iconName="ErrorBadge12" className={iconCLose} />
             </div>
 
-            <ItemsMenu itemsMenu={listMenuOrder} />
+            <ItemsMenu itemsMenu={listMenuOrder} urlAbsolute={urlAbsolute} />
           </div>
         </div>
       )}

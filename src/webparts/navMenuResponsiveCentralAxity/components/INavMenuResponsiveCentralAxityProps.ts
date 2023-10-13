@@ -4,6 +4,7 @@ export interface INavMenuResponsiveCentralAxityProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  urlAbsolute: string;
 }
 
 export interface ItemMenu extends ItemMenuView {
@@ -22,4 +23,5 @@ export interface ItemMenuView {
 
 export interface ItemsMenuProps {
   itemsMenu: ItemMenu[];
+  urlAbsolute: string;
 }

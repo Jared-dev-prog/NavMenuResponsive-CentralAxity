@@ -3,7 +3,7 @@
   "solution": {
     "name": "nav-menu-responsive-central-axity-client-side-solution",
     "id": "3c006891-a604-4a8f-a2bf-a833d5aec827",
-    "version": "1.3.0.1",
+    "version": "2.5.0.1",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,7 +30,7 @@
         "title": "nav-menu-responsive-central-axity Feature",
         "description": "The feature that activates elements of the nav-menu-responsive-central-axity solution.",
         "id": "8bf72784-1054-4fa2-b3d2-9bd83a4a8e4e",
-        "version": "1.3.0.1"
+        "version": "2.5.0.1"
       }
     ]
   },

@@ -9,18 +9,11 @@ const handleRedirect = (url: string, typeOpen: boolean): void => {
 };
 
 const ItemsMenu: React.FC<ItemsMenuProps> = (props) => {
-  const { itemsMenu } = props;
+  const { itemsMenu, urlAbsolute } = props;
   return (
     <nav className={styles.containerNav}>
       <ul>
-        <div
-          className={styles.consultoria}
-          onClick={() =>
-            handleRedirect(
-              "https://intellego365.sharepoint.com/sites/CentralAxity/M%C3%A9xico/Consultoria2",
-              false
-            )
-          }>
+        <div className={styles.consultoria} onClick={() => handleRedirect(urlAbsolute, false)}>
           Consultoría
         </div>
         {itemsMenu !== undefined

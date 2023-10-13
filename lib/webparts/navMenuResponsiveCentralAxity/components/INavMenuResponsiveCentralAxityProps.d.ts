@@ -4,6 +4,7 @@ export interface INavMenuResponsiveCentralAxityProps {
     environmentMessage: string;
     hasTeamsContext: boolean;
     userDisplayName: string;
+    urlAbsolute: string;
 }
 export interface ItemMenu extends ItemMenuView {
     ID: number;
@@ -20,5 +21,6 @@ export interface ItemMenuView {
 }
 export interface ItemsMenuProps {
     itemsMenu: ItemMenu[];
+    urlAbsolute: string;
 }
 //# sourceMappingURL=INavMenuResponsiveCentralAxityProps.d.ts.map
